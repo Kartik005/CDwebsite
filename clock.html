@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cafe Dev rocks</title>
+    <style>
+        body {
+            background-color: #ffa500;
+        }
+        
+        h1 {
+            color: red;
+        }
+        
+        p {
+            color: rgb(61, 121, 96);
+        }
+        
+        #clock {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: white;
+            position: absolute;
+            top: 80%;
+            left: 80%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 5px 10px 50px 10px;
+            font-size: 80px;
+            color: #091921;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>We will make a clock</h1>
+    <h2>But we don't know how?</h2>
+    <p>We will copy it while inspecting it on google and well<wbr> inspecting has a really cool feature. There's this styles tab which shows the style of the page<wbr> amd the computed tab is the best thing.It displays the height, width, display type so
+        you can check the variables in code and can understand which value each one stands for.
+        <h1>So lets get started</h1>
+        So we made the clock thing in stlye tag. Basically it will specify what the clock container would look like. Now we will recall it in div tag as idand then wewillhave use for it later*. So we will write our code for clock in javascript. And after that
+        we will get the desired result "time" that we wish to display. So we will display it where? In the clock container! By using documentdotgetElementByUd brackets'clock' dotinsertText="time" Lets get started
+    </p>
+    <div class="container" id="clock"></div>
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+
+            var time = h + ':' + m + ':' + s;
+            document.getElementById('clock').innerText = time;
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+    </script>
+
+</body>
+
+</html>

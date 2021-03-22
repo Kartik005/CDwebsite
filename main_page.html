@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+
+    <! #9fa8a3 #c5d5cb #e3e0cf>
+
+
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+            background-image: url('background4.jpg');
+            background-image: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        p {
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 10px;
+            text-decoration: underline;
+        }
+        
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        textarea {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .domain-icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+        
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 100px;
+        }
+        
+        .dp {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            margin-left: 150px;
+            width: 200px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(231, 221, 221);
+            border-radius: 50%;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+        
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* image overlay*/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            position: relative;
+            width: 50%;
+            max-width: 500px;
+        }
+        
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            transition: 0.5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        
+        @media (max-width: 550px) {
+            .dp {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main_page.html"> <img class="logo" src="Logo1.png">
+    </div>
+
+    <! nav bar>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav">
+        <a href="#menu" class="active">Menu</a>
+
+        <div id="myLinks">
+            <a href="#about_us">About Us</a>
+            <a href="#domains">Domains</a>
+            <a href="#members">Members</a>
+            <a href="#contact_us">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div id="about_us">
+        <h1>About Us</h1>
+        <p>
+            Heyyy! We are Cafe Dev. Our innitiative is to help students explore every domain to find the domain of thier interest and passion. We will do our best to help you in getting the opportunities that will shape your career. As we all know, right now we don't
+            have time but we have opportunities, later on we will have all the time but no opportunities. So do not miss your opportunities that may change the course of your future.
+        </p>
+    </div>
+
+    <div id="domains">
+        <h1>Domains</h1>
+        <img class="domain-icon" src="iot.jpg">
+        <h2>Internet of things</h2>
+        <p>
+            Internet of things is the mass communication and interconnectivity of multiple devices through the internet.
+        </p>
+
+        <img class="domain-icon" src="ar.jpg">
+        <h2>Augmented Reality</h2>
+        <p>
+            Augmented reality is the technologyof presenting animations in the real time.
+        </p>
+
+        <img class="domain-icon" src="ml.jpg">
+        <h2>Machine Learning</h2>
+        <p>
+            Teaching a computer how to do a task is called machine learning.
+        </p>
+    </div>
+
+
+    <div id="members">
+        <h1>Members</h1>
+        <div class="container"><img alt="avatar" class="dp" src="Akhileshwar sir.png">
+            <div class="overlay">Akhilesh Mehra</div>
+        </div>
+        <div class="container"><img alt="avatar" class="dp" src="Arnab sir.png">
+            <div class="overlay">Arnab Saha</div>
+        </div>
+        <div class="container"><img alt="avatar" class="dp" src="Garima ma'am.png">
+            <div class="overlay">Garima Goyal</div>
+        </div>
+        <div class="container"><img alt="avatar" class="dp" src="Mihir sir.png">
+            <div class="overlay">Mihir Jain</div>
+        </div>
+        <div class="container"><img alt="avatar" class="dp" src="Shubham sir.png">
+            <div class="overlay">Shubham Gupta</div>
+        </div>
+        <div class="container"><img alt="avatar" class="dp" src="Vasvi ma'am.png">
+            <div class="overlay">Vasvi Sood</div>
+        </div>
+    </div>
+
+    <div id="contact_us">
+        <h1>Contact Us</h1>
+    </div>
+    <form>
+        <textarea name="mytext" rows="10" cols="30" placeholder="What would you like to say.."></textarea>
+    </form>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
